@@ -129,22 +129,30 @@ Production-minded engineering decisions
 ## 📸 Screenshots
 
 ### 🏠 Main Page
-![Main Page](./Screenshots/Main Page.png)
+![Main Page](./Screenshots/Main-Page.png)
 
-### 🔎 Filters & Stats
-![Filters](./Screenshots/Stats &filters.png)
+---
+
+### 🔎 Stats & Filters
+![Stats & Filters](./Screenshots/Stats&filters.png)
+
+---
 
 ### 👥 All Candidates
-![Candidates](./Screenshots/all Candidates.png)
+![All Candidates](./Screenshots/all-Candidates.png)
 
-### 📄 Candidate Profile
+---
+
+### 🎯 Filtered Candidates
+![Filtered Candidates](./Screenshots/FilteredCandidates.png)
+
+---
+
+### 👤 Candidate Profile
 ![Profile](./Screenshots/Profile.png)
 
-### 📄 Profile View 2
-![Profile 2](./Screenshots/Profile 2.png)
+---
 
-### 🎯 Filtered Results
-![Filtered](./Screenshots/Filtered Candidates.png)
-❤️ Created by
-
+### 👤 Candidate Profile View 2
+![Profile 2](./Screenshots/Profile-2.png)
 Tasneem Hesham
