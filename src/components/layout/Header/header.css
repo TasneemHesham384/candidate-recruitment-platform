@@ -1,0 +1,128 @@
+.continer {
+  width: 100% !important;
+}
+.header-container {
+  position: sticky;
+  top: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-card);
+  box-shadow: var(--shadow-md);
+  padding: 0 50px;
+  transition: 0.3s ease;
+  width: 100% !important;
+  z-index: 1000;
+}
+
+.header-container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header-container .logo h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+}
+.nav-links {
+  margin: 0 100px;
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+}
+.nav-links li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease;
+}
+.nav-links li a.active::after,
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* مسافة شيك بين الافاتار والاسم */
+  flex-shrink: 0; /* يمنع الـ MUI Avatar إنه "يكش" لما الزحمة تزيد */
+}
+@media (max-width: 767px) {
+  .header-container {
+    padding: 0 15px !important;
+  }
+
+  .menu-icon {
+    display: block !important;
+    position: fixed;
+    right: 20px; 
+    top: 25px;
+    z-index: 2100;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--primary);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    padding: 100px 30px;
+    margin: 0 !important;
+    gap: 25px;
+    z-index: 2000;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-links.active {
+    transform: translateX(0) !important;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+    color: var(--text-main);
+    text-decoration: none;
+    display: block;
+  }
+
+  .Account h6,
+  .Account p {
+    display: none !important;
+  }
+  .user-text {
+    display: none !important;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* زودي الـ padding اليمين في الموبايل عشان الأفاتار ميوصلش لآخر الشاشة ويخبط في الزرار */
+    padding-right: 60px !important;
+  }
+}

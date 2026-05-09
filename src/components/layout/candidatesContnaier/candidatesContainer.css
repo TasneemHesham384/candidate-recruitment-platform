@@ -1,0 +1,194 @@
+.candidate-card {
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  transition: transform 0.3s ease;
+  max-width: 350px;
+  border: 1px solid #f0f0f0;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  background-color: var(--bg-card);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+  border-radius: 10px;
+  border-top: 1px solid #eee;
+}
+
+.candidate-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* .candidate-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+} */
+
+.candidate-info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.candidate-name {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.candidate-role {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.candidate-meta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.meta-icon {
+  font-size: 16px !important;
+}
+
+.candidate-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skill-tag {
+  /* border: 1.5px solid #2e7d32; */
+  color: #2e7d32;
+  padding: 4px 12px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(46, 125, 50, 0.05);
+  color: black;
+  background-color: var(--success-bg);
+}
+
+.status-badge {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.status-badge.open {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.busy {
+  background-color: #f5f5f5;
+  color: #666;
+}
+.CandidateContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.avatar-sprite {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url("../../../assets/sprite-avatar.png");
+  background-size: 600% 400%;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  background-origin: content-box;
+  /* padding: 2px; */
+  box-sizing: border-box;
+}
+
+/* الصف الأول */
+.avatar-2 {
+  background-position: 0% 0%;
+}
+.avatar-1 {
+  background-position: 20% 0%;
+}
+.avatar-4 {
+  background-position: 40% 0%;
+}
+.avatar-3 {
+  background-position: 60% 0%;
+}
+.avatar-6 {
+  background-position: 80% 0%;
+}
+.avatar-5 {
+  background-position: 100% 0%;
+}
+
+/* الصف الثاني */
+.avatar-7 {
+  background-position: 0% 33.3%;
+}
+.avatar-8 {
+  background-position: 20% 33.3%;
+}
+.avatar-9 {
+  background-position: 40% 33.3%;
+}
+.avatar-10 {
+  background-position: 60% 33.3%;
+}
+.avatar-11 {
+  background-position: 80% 33.3%;
+}
+.avatar-12 {
+  background-position: 100% 33.3%;
+}
+
+/* الصف الثالث */
+.avatar-14 {
+  background-position: 0% 66.6%;
+}
+.avatar-13 {
+  background-position: 20% 66.6%;
+}
+.avatar-16 {
+  background-position: 40% 66.6%;
+}
+.avatar-15 {
+  background-position: 60% 66.6%;
+}
+.avatar-17 {
+  background-position: 80% 66.6%;
+}
+.avatar-18 {
+  background-position: 100% 66.6%;
+}
+
+.avatar-19 {
+  background-position: 0% 100%;
+}
+.avatar-20 {
+  background-position: 20% 100%;
+}

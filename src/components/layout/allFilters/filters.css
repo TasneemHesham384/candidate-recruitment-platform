@@ -1,0 +1,185 @@
+
+.filterCards {
+  padding: 24px;
+  background-color: var(--bg-card);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  border-top: 1px solid #eee;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  height: auto;
+  position: relative;
+}
+
+
+.search-bar-input {
+  width: 100%;
+}
+
+.search-bar-input .MuiOutlinedInput-root {
+  border-radius: 14px;
+  background-color: #f9fafb;
+  padding: 6px 10px;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.search-bar-input .MuiOutlinedInput-root:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.search-bar-input .MuiOutlinedInput-root.Mui-focused {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  width: 100%;
+}
+
+
+.active-filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.active-filters-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-right: 12px;
+}
+
+.active-chip {
+  background-color: #eff6ff !important;
+  color: #1e40af !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  border: 1px solid #dbeafe !important;
+  font-size: 12.5px !important;
+  height: 28px;
+}
+
+.active-chip .MuiChip-deleteIcon {
+  color: #3b82f6 !important;
+}
+
+.MuiChip-root {
+  border-radius: 8px;
+}
+
+
+
+.reset-all-btn {
+  text-transform: none !important;
+  color: #ef4444 !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+}
+
+.reset-all-btn:hover {
+  background-color: #fef2f2 !important;
+  text-decoration: underline !important;
+}
+
+/* =========================
+   STATUS BADGE (Rejected fix)
+========================= */
+
+.status-rejected {
+  margin-left: auto;
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+
+.filters-wrapper {
+  background-color: var(--bg-card);
+  padding: var(--space-lg);
+  border-radius: var(--radius-card);
+  margin-bottom: var(--space-lg);
+}
+
+.active-filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+
+.filter-select {
+  background-color: #f9fafb;
+  border-radius: 8px !important;
+}
+
+.filter-select fieldset {
+  border-color: #e5e7eb !important;
+}
+
+.filter-select:hover fieldset {
+  border-color: #3b82f6 !important;
+}
+
+/* =========================
+   PAPER CONTAINER (MUI)
+========================= */
+
+.filters-paper {
+  padding: 24px;
+  border-radius: 12px !important;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .filters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .filters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filterCards {
+    padding: 16px;
+  }
+
+  .active-filters-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

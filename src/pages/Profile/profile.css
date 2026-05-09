@@ -1,0 +1,484 @@
+.profile-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #f6f8fc;
+  font-family: system-ui, sans-serif;
+}
+
+/* NAV */
+.profile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.back-link-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.nav-actions button {
+  border: 1px solid #e2e8f0;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* MAIN CARD */
+.main-info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+/* HEADER */
+.header-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile-identity {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.avatar-large {
+  width: 90px;
+  height: 90px;
+  border-radius: 16px;
+  background-image: url("../../../assets/sprite-avatar.png");
+  background-size: 600% 400%;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.identity-text h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.headline-text {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.meta-row {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 8px;
+}
+
+/* RIGHT SIDE */
+.header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.top-badges {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge.open {
+  background: #ecfdf5;
+  color: #16a34a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* SCORE */
+.score-widget {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #22c55e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0fdf4;
+}
+
+.score-val {
+  font-size: 14px;
+  font-weight: bold;
+  color: #15803d;
+}
+
+.score-label {
+  font-size: 8px;
+  color: #16a34a;
+}
+
+/* ACTION BUTTONS */
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-shortlist {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.btn-reject {
+  background: #fee2e2;
+  color: #dc2626 ;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-reject {
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #64748b;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-reject:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+/* لما يبقى rejected */
+.btn-reject.active {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #dc2626;
+  box-shadow: 0 0 0 3px #fff1f2;
+}
+
+.btn-reject.active:hover {
+  background: #fee2e2;
+}
+.btn-more {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* TABS */
+.tab-menu {
+  display: flex;
+  gap: 24px;
+  margin-top: 18px;
+  border-top: 1px solid #eef2f7;
+  padding-top: 12px;
+}
+
+.tab-item {
+  font-size: 14px;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.tab-item.active {
+  color: #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 6px;
+}
+
+/* GRID */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 16px;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* المسافة بين الكبسولات */
+  margin-top: 10px;
+}
+
+.skill-pill {
+  background-color: var(--bg-main); /* استخدمنا الـ slate الخفيف */
+  color: var(--primary); /* اللون الموف بتاعك */
+  border: 1px solid var(--border-light);
+  padding: 6px 14px;
+  border-radius: 99px; /* شكل الكبسولة */
+  font-size: 13px;
+  font-weight: 500;
+}
+/* profile.css */
+
+.profile-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: var(--bg-main); 
+  min-height: 100vh;
+}
+
+.main-info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow-md); /* الظل اللي بيعمل الـ Premium Feel */
+  margin-bottom: 24px;
+}
+
+/* الهوية (الأفاتار والاسم) */
+.profile-identity {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.avatar-large {
+  width: 110px;
+  height: 110px;
+  border-radius: 16px;
+  background-image: url("../../../assets/sprite-avatar.png");
+  background-size: 600% 400%;
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-main);
+}
+
+.identity-text h1 {
+  font-size: 28px;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.headline-text {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* الميتا (لوكيشن، خبرة..) */
+.meta-row {
+  display: flex;
+  gap: 20px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.meta-row span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-row svg {
+  font-size: 18px;
+  color: var(--primary); /* الأيقونات بلون البريمري الموف */
+}
+
+/* الأزرار والبادجات */
+.badge.open {
+  background-color: var(--success-bg);
+  color: var(--success);
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.btn-shortlist {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-shortlist:hover {
+  background-color: var(--primary-hover);
+}
+
+/* الكروت الجانبية والأساسية */
+.detail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-card h3 {
+  font-size: 18px;
+  color: var(--text-main);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* الـ Skills (الكبسولات) */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background-color: var(--bg-main);
+  color: var(--primary);
+  border: 1px solid var(--border-light);
+  padding: 8px 16px;
+  border-radius: 99px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* الـ Timeline (الخبرة) */
+.timeline-container {
+  border-left: 2px solid var(--border-light);
+  padding-left: 24px;
+  margin-left: 10px;
+}
+
+.timeline-block {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -31px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  border: 3px solid var(--bg-card);
+}
+
+.company-info {
+  color: var(--primary);
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+/* الـ Contact & Notes */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-main);
+  border-radius: 8px;
+  color: var(--text-main);
+}
+
+.notes-area {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 12px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.notes-area:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  /* الـ Grid يتحول لعمود واحد */
+  .content-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  /* الهيدر يبقى تحت بعضه عشان الأزرار متخرجش بره الشاشة */
+  .header-flex-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-actions {
+    text-align: left; /* نعدل اتجاه الأزرار والبادجات */
+    width: 100%;
+  }
+
+  .top-badges {
+    justify-content: flex-start;
+  }
+
+  .button-group {
+    justify-content: flex-start;
+    flex-wrap: wrap; /* عشان الأزرار متنزلش تحت بعض بشكل وحش */
+  }
+}
+@media (max-width: 480px) {
+  .profile-wrapper {
+    padding: 20px 10px;
+  }
+
+  .main-info-card {
+    padding: 16px;
+  }
+
+  .profile-identity {
+    flex-direction: column; /* الأفاتار فوق الاسم */
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .avatar-large {
+    width: 80px;
+    height: 80px;
+  }
+
+  .meta-row {
+    flex-direction: column; /* الميتا داتا (اللوكيشن والخبرة) تحت بعض */
+    gap: 8px;
+  }
+
+  .tab-menu {
+    gap: 15px;
+    overflow-x: auto; /* لو الـ Tabs كتير يقدر يسكرول بالعرض */
+    padding-bottom: 10px;
+  }
+
+  .tab-item {
+    font-size: 14px;
+    white-space: nowrap; /* يمنع التاب إنها تتقسم لسطرين */
+  }
+}
