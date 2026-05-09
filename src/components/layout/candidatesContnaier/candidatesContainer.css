@@ -1,3 +1,6 @@
+.CandidateContainer {
+  margin-bottom: 100px;
+}
 .candidate-card {
   border-radius: 20px;
   padding: 24px;
@@ -6,8 +9,8 @@
   max-width: 350px;
   border: 1px solid #f0f0f0;
   margin-top: 30px;
-  margin-bottom: 100px;
-  background-color: var(--bg-card);
+
+    background-color: var(--bg-card);
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
   border-radius: 10px;
   border-top: 1px solid #eee;
