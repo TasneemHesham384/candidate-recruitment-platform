@@ -125,6 +125,26 @@ Real-world state management patterns
 Advanced filtering & UX handling
 Performance-aware frontend design
 Production-minded engineering decisions
+
+## 📸 Screenshots
+
+### 🏠 Main Page
+![Main Page](./Screenshots/Main Page.png)
+
+### 🔎 Filters & Stats
+![Filters](./Screenshots/Stats &filters.png)
+
+### 👥 All Candidates
+![Candidates](./Screenshots/all Candidates.png)
+
+### 📄 Candidate Profile
+![Profile](./Screenshots/Profile.png)
+
+### 📄 Profile View 2
+![Profile 2](./Screenshots/Profile 2.png)
+
+### 🎯 Filtered Results
+![Filtered](./Screenshots/Filtered Candidates.png)
 ❤️ Created by
 
 Tasneem Hesham
